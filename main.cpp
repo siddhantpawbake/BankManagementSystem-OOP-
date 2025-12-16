@@ -94,3 +94,21 @@ class SimpleBank:public Bank{
             }
         }
 };
+class CheckingAccount : public Account
+{
+private:
+    double overdraftFee;
+
+public:
+    CheckingAccount(string num,double initialBalance,double fee,Bank *b):Account(num,initialBalance,b),overdraftFee(fee){}
+        bool withdraw(int amount)override{
+            if(amount>balance){
+                balance-=overdraftFee;
+                cout<<"Overdraft fee applied: $"<<overdraftFee<<endl;
+            }
+        return Account::withdraw(amount);
+    }
+    void transactionLog(const string &type) override{
+        cout<<"Checking log:"<<type<<" on "<< acNum<<" (Fee applicable if overdrawn)"<< endl;
+    }
+};

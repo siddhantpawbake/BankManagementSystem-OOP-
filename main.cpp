@@ -54,4 +54,20 @@ class Account{
             return false;
         }
 };
-
+class SavingsAc : public Account{
+    private:
+        int interestrate;
+    public:
+        SavingsAc(string num,int inibalance,int rate,Bank* b):Account(num,inibalance,b),interestrate(rate){};
+        bool withdraw(int amount) override{
+            return Account::withdraw(amount);
+        }
+        void applyInterest(){
+            int interest=balance*interestrate;
+            deposit(interest);
+            cout<<"Interest is :"<<interest<<endl;
+        }
+        void transactionLog(const string& type)override{
+            cout<<"Savings log:" <<type<<" on "<<acNum<<"Balance : $"<<fixed<<balance<<")"<<endl;;
+        }
+};

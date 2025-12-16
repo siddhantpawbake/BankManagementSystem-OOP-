@@ -54,7 +54,7 @@ class Account{
             return false;
         }
 };
-class SavingsAc : public Account{
+class SavingsAc:public Account{
     private:
         int interestrate;
     public:
@@ -69,5 +69,28 @@ class SavingsAc : public Account{
         }
         void transactionLog(const string& type)override{
             cout<<"Savings log:" <<type<<" on "<<acNum<<"Balance : $"<<fixed<<balance<<")"<<endl;;
+        }
+};
+class SimpleBank:public Bank{
+    private:
+        vector<Account*>accounts;
+    public:
+        void addAC(Account *acc)override{
+            accounts.push_back(acc);
+            cout<<"Added account: "<<acc->getNumber()<<endl;
+        }
+        void Tnsc(Account* from,Account* to,int amount)override{
+            if(from->transferto(to,amount)){
+                cout<<"Transfer Successful from ac "<<from->getNumber()<<" to "<<to->getNumber()<<endl;
+            }
+            else{
+                cout<<"Transfer Failed"<<endl;
+            }
+        }
+        void displaybalances(){
+            cout<<"<----Bank Summary---->"<<endl;
+            for(auto i:accounts){
+                cout<< i->getNumber()<<":$"<<fixed<<setprecision(2)<<i->getbalance()<<endl;
+            }
         }
 };

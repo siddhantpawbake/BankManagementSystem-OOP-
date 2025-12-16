@@ -1,129 +1,161 @@
-🏦 Bank Management System (OOP in C++)
+# 🏦 Bank Management System  
+### *(Object-Oriented Programming in C++)*
 
-A clean, object-oriented Bank Management System built in C++ that models real-world banking operations using core OOP principles like encapsulation, abstraction, inheritance, and polymorphism.
+A clean, **object-oriented Bank Management System** built using **C++**, designed to model real-world banking operations by applying core **OOP principles** such as:
 
-This project demonstrates a practical application of C++ classes and data management — perfect for learning, showcasing, or expanding into larger systems.
+- Encapsulation  
+- Abstraction  
+- Inheritance  
+- Polymorphism  
 
-💡 Features
+This project is ideal for **learning OOP**, **academic submissions**, and **portfolio showcasing**.
 
-✔ Create new bank accounts
-✔ Display account details
-✔ Deposit money
-✔ Withdraw money
-✔ View all accounts
-✔ Simple, intuitive text-based UI
+---
 
-🧠 Core Concepts Used
+## ✨ Features
 
-Object-Oriented Programming (OOP)
+✔ Create new bank accounts  
+✔ Display account details  
+✔ Deposit money  
+✔ Withdraw money  
+✔ Transfer money between accounts  
+✔ View all accounts summary  
+✔ Simple and intuitive **text-based UI**
 
-Class Design & Encapsulation
+---
 
-Function Overloading & Inheritance
+## 🧠 Core Concepts Used
 
-Modular code structure
+- **Object-Oriented Programming (OOP)**
+- **Class Design & Encapsulation**
+- **Inheritance & Function Overloading**
+- **Modular Code Structure**
+- **Menu-Driven Console Application**
 
-🗂️ Table of Contents
+---
 
-Demo / Screenshots
+## 🗂️ Table of Contents
 
-Getting Started
+- 📸 Demo / Screenshots  
+- 🚀 Getting Started  
+- 🛠️ Installation  
+- 🧾 Usage  
+- 🧪 Examples  
+- 🤝 Contributing  
+- 🙌 Credits  
 
-Installation
+---
 
-Usage
+## 📸 Demo / Screenshots
 
-Examples
+> All screenshots are displayed in a **uniform size** for a clean and professional look.
 
-Contributing
+<p align="center">
+  <img src="Screenshots/1stAccreation.jpg" width="350" />
+  <br><em>First Account Creation</em>
+</p>
 
-📸 Demo / Screenshots
+<p align="center">
+  <img src="Screenshots/2ndAccreation.jpg" width="350" />
+  <br><em>Second Account Creation</em>
+</p>
 
-(Paste your 5 screenshots here with descriptions — replace the placeholder text below!)
+<p align="center">
+  <img src="Screenshots/moneytransfer.jpg" width="350" />
+  <br><em>Money Transfer (Account 1 → Account 2)</em>
+</p>
 
-![Create Account](Screenshots/1stAccreation.jpg)  
-*1st account creation*
+<p align="center">
+  <img src="Screenshots/Withdrawl.jpg" width="350" />
+  <br><em>Withdrawal Operation</em>
+</p>
 
-![Create Account](Screenshots/2ndAccreation.jpg)  
-*2nd account creation*
+<p align="center">
+  <img src="Screenshots/BankSummary.jpg" width="350" />
+  <br><em>Displaying All Bank Accounts</em>
+</p>
 
-![Money Transfer](Screenshots/moneytransfer.jpg)  
-*Money Transfer: 1->2*
+---
 
-![Withdraw](Screenshots/Withdrawl.jpg)  
-*Withdraw workflow*
+## 🚀 Getting Started
 
-![Withdraw](Screenshots/BankSummary.jpg)  
-*Displayin all accounts*
+Follow the steps below to run the project on your local machine.
 
-🚀 Getting Started
+---
 
-These instructions will get a copy of the project up and running on your local machine.
+## 🛠️ Installation
 
-🛠️ Installation
-
-Clone the repository
-
+### Clone the Repository
+```bash
 git clone https://github.com/siddhantpawbake/BankManagementSystem-OOP-.git
 cd BankManagementSystem-OOP-
+```
+### Compile & Run
 
+Compile the program (GCC):
 
-Compile in C++ (GCC example):
+    g++ main.cpp -o BankSystem
 
-g++ main.cpp -o BankSystem
+Run the application:
 
+    ./BankSystem
 
-Run
+💡 You can also run this project using VS Code, CLion, or Code::Blocks.
 
-./BankSystem
+---
 
+## 🧾 Usage
 
-💡 You can also import the code into any IDE (VS Code, CLion, Code::Blocks).
+After launching, the following menu is displayed:
 
-🧾 Usage
+    1. Create Account
+    2. Deposit Amount
+    3. Withdraw Amount
+    4. Balance Enquiry
+    5. All Account Holders List
+    6. Close An Account
+    7. Modify An Account
+    8. Exit
 
-Once launched, the system presents a menu:
+👉 Enter the corresponding number to perform an operation.
 
-1. Create Account
-2. Deposit Amount
-3. Withdraw Amount
-4. Balance Enquiry
-5. All Account Holders List
-6. Close An Account
-7. Modify An Account
-8. Exit
+---
 
+## 🧪 Examples
 
-Navigate by entering the corresponding number.
+Create an account:
 
+    Enter Name: John Doe
+    Enter Balance: 5000
+    Account created successfully!
 
-🧪 Examples
+Deposit money:
 
-Create an account
+    Enter Account No: 1001
+    Enter Deposit Amount: 2000
+    Updated Balance: 7000
 
-Enter Name: John Doe
-Enter Balance: 5000
-Account created successfully!
+---
 
+## 🤝 Contributing
 
-Deposit
+Contributions are welcome and appreciated!
 
-Enter Account No: 1001
-Enter Deposit Amount: 2000
-Updated Balance: 7000
+You can:
+- ✨ Add new features
+- 🐛 Fix bugs
+- 📝 Improve documentation
 
-🤝 Contributing
+Steps:
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Open a Pull Request
 
-Contributions are welcome!
-If you want to:
+---
 
-✨ Add new features
-🐛 Fix bugs
-📝 Improve documentation
-
-Fork the project → Create a branch → Open a PR!
-
-
-🙌 Credits
+## 🙌 Credits
 
 Made with 💛 by Siddhant Pawbake
+
+⭐ If you found this project useful, consider giving it a star!
